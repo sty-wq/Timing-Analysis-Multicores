@@ -72,5 +72,5 @@ ninja -j $(nproc)
 - `GUROBI_HOME`：Gurobi 的安装路径，需要确保路径下有 `lib`，`bin` 和 `include` 三个文件夹
 - `LD_LIBRARY_PATH`：需要将 Gurobi 的 `lib` 文件夹路径添加到该环境变量中，同时对于使用 `LP_SOLVE` 的用户，也需要将 `lpsolve` 的 `lib` 文件夹路径添加到该环境变量中，或者可以创建一个软链接到 `/usr/lib` 中
 - `PATH`：需要将 Gurobi 的 `bin` 文件夹路径添加到该环境变量中，同时，请将项目编译后的 `build/bin` 文件夹路径添加到该环境变量中
-- `CPLUS_INCLUDE_PATH`：需要将 Gurobi 的 `bin` 文件夹路径添加到该环境变量中
+- `CPLUS_INCLUDE_PATH`：需要将 Gurobi 的 `include` 文件夹路径添加到该环境变量中
 - `GRB_LICENSE_FILE`：请将 Gurobi 的许可文件路径添加到该环境变量中
